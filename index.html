@@ -3,9 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.mini.css">
 </head>
 <body>
-    
+    <div class="wrapper container">
+        <div class="sidebar">
+            <a class="sitebar_logo" href="">
+            <img class="sitebar__logo--img" src="./img/sitenav logo.svg" alt="" width="35" height="38.60">
+            <span class="sitebar_logo--text">Dashboard</span>
+
+            </a>
+            <nav class="sitenav">
+                <ul class="sitenav_list">
+                    <li class="sirenav_item ">
+                        <a class="sinenav_link " href="">
+                            <img class="sitenav_link-icon" src="./img/overview-icon.svg" alt="">
+                            <span class="sitenav_link-text">Overview</span>
+                        </a>
+                    </li>
+                    <li class="sirenav_item active">
+                        <a class="sinenav_link" href="">
+                            <img class="sitenav_link-icon" src="./img/tickets-icon.svg" alt="">
+                            <span class="sitenav_link-text">Tickets</span>
+                        </a>
+                    </li>
+                    <li class="sirenav_item active">
+                        <a class="sinenav_link" href="">
+                            <img class="sitenav_link-icon" src="./img/ideas-icon.svg" alt="">
+                            <span class="sitenav_link-text">Ideas</span>
+                        </a>
+                    </li>
+                    <li class="sirenav_item active">
+                        <a class="sinenav_link" href="">
+                            <img class="sitenav_link-icon" src="./img/contact-icon.svg" alt="">
+                            <span class="sitenav_link-text">Contacts</span>
+                        </a>
+                    </li>
+                    <li class="sirenav_item active">
+                        <a class="sinenav_link" href="">
+                            <img class="sitenav_link-icon" src="./img/agent-icon.svg" alt="">
+                            <span class="sitenav_link-text">Agents</span>
+                        </a>
+                    </li>
+                    <li class="sirenav_item active">
+                        <a class="sinenav_link" href="">
+                            <img class="sitenav_link-icon" src="./img/articles-icon.svg" alt="">
+                            <span class="sitenav_link-text">Articles</span>
+                        </a>
+                    </li>
+                </ul>
+                
+            </nav>
+            <div class="sitenav_bottom">
+                <a class="sitenav_bottom--link" href="">
+                    <img class="sitenav_bottom--img" src="./img/change.svg" alt="" width="24" height="24">
+                    <span class="sitenav_bottom--text">Change mode</span>
+                </a>
+                <a class="sitenav_bottom--link" href="">
+                    <img class="sitenav_bottom--img" src="./img/logout.svg" alt="" width="24" height="24">
+                    <span class="sitenav_bottom--text">Logout</span>
+                </a>
+            </div>
+        </div>
+        <div class="main container">
+            <div class="main_top">
+                <img class="main_vector--img" src="./img/Vector.png" alt="" width="30" height="20">
+                <a class="main_top--link" href="">
+                    <span class="main_top--text">Jones Ferdinand</span>
+                    <img class="main_top--img" src="./img/ferdinand.jpg" alt="">
+                </a>
+            </div>
+            <div class="main_overview">
+                <h2 class="overview_title">Overview</h2>
+                <a class="overview_link" href="">
+                    <img class="overview-img" src="./img/Dots.svg" alt="" width="71" height="35.5">
+                    <button class="overview-btn">Add</button>
+                </a>
+            </div>
+            <div class="main_blog">
+                <table class="main_blog--content" width="100%">
+                    <thead class="main_blog_thead">
+                        <tr class="main_blog_thead--tr">
+                            <th class="main_blog--th">Owner</th>
+                            <th class="main_blog--th">End date</th>
+                            <th class="main_blog--th">Profits</th>
+                            <th class="main_blog--th">Losses</th>
+                            <th class="main_blog--th">Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody class="main_blog--tbody">
+                        <tr class="main_blog_tbody--tr tbody_tr-bg">
+                            <td class="main_blog--td flex"><img class="main_hero--img" src="./img/savanna.svg" alt="" width="36.5" height="34.5">
+                                <p class="main_hero--text">Savannah Nguyen</p></td>
+                                <td class="main_blog--td">1/15/12</td>
+                                <td class="main_blog--td">$328.85</td>
+                                <td class="main_blog--td">$779.58</td>
+                                
+                                <td class="main_blog--td">(603) 555-0123</td>
+                        </tr>
+                        <tr class="main_blog_tbody--tr">
+                            <td class="main_blog--td flex"><img class="main_hero--img" src="./img/jenny.png" alt="" width="36.5" height="34.5">
+                                <p class="main_hero--text">Jenny Wilson</p></td>
+                                <td class="main_blog--td">8/30/14</td>
+                                <td class="main_blog--td">$948.55</td>
+                                <td class="main_blog--td">$779.58</td>
+                                
+                                <td class="main_blog--td">(629) 555-0129</td>
+                        </tr>
+                        <tr class="main_blog_tbody--tr tbody_tr-bg">
+                            <td class="main_blog--td flex"><img class="main_hero--img" src="./img/anetta.png" alt="" width="36.5" height="34.5">
+                                <p class="main_hero--text">Annette Black</p></td>
+                                <td class="main_blog--td">5/30/14</td>
+                                <td class="main_blog--td">$778.35</td>
+                                <td class="main_blog--td">$948.55</td>
+                                
+                                <td class="main_blog--td">(308) 555-0121</td>
+                        </tr>
+                        <tr class="main_blog_tbody--tr">
+                            <td class="main_blog--td flex"><img class="main_hero--img" src="./img/kateryn.svg" alt="" width="36.5" height="34.5">
+                                <p class="main_hero--text">Kathryn Murphy</p></td>
+                                <td class="main_blog--td">11/7/16</td>
+                                <td class="main_blog--td">$169.43</td>
+                                <td class="main_blog--td">$202.87</td>
+                                
+                                <td class="main_blog--td">(302) 555-0107</td>
+                        </tr>
+                        <tr class="main_blog_tbody--tr tbody_tr-bg">
+                            <td class="main_blog--td flex"><img class="main_hero--img" src="./img/jenny.png" alt="" width="36.5" height="34.5">
+                                <p class="main_hero--text">Cameron Williamson</p></td>
+                                <td class="main_blog--td">7/27/13</td>
+                                <td class="main_blog--td">$948.55</td>
+                                <td class="main_blog--td">$779.58</td>
+                                
+                                <td class="main_blog--td">(629) 555-0129</td>
+                        </tr>
+                        <tr class="main_blog_tbody--tr">
+                            <td class="main_blog--td flex"><img class="main_hero--img" src="./img/kristin.svg" alt="" width="36.5" height="34.5">
+                                <p class="main_hero--text">Kristian Watson</p></td>
+                                <td class="main_blog--td">8/30/14</td>
+                                <td class="main_blog--td">$948.55</td>
+                                <td class="main_blog--td">$779.58</td>
+                                
+                                <td class="main_blog--td">(629) 555-0129</td>
+                        </tr>
+                        <tr class="main_blog_tbody--tr tbody_tr-bg">
+                            <td class="main_blog--td flex"><img class="main_hero--img" src="./img/eleanor.svg" alt="" width="36.5" height="34.5">
+                                <p class="main_hero--text">Eleanor Pena</p></td>
+                                <td class="main_blog--td">8/30/14</td>
+                                <td class="main_blog--td">$948.55</td>
+                                <td class="main_blog--td">$779.58</td>
+                                
+                                <td class="main_blog--td">(629) 555-0129</td>
+                        </tr>
+                        <tr class="main_blog_tbody--tr">
+                            <td class="main_blog--td flex"><img class="main_hero--img" src="./img/guy.svg" alt="" width="36.5" height="34.5">
+                                <p class="main_hero--text">Guy Hawkins</p></td>
+                                <td class="main_blog--td">8/30/14</td>
+                                <td class="main_blog--td">$948.55</td>
+                                <td class="main_blog--td">$779.58</td>
+                                
+                                <td class="main_blog--td">(629) 555-0129</td>
+                        </tr>
+                        <tr class="main_blog_tbody--tr tbody_tr-bg">
+                            <td class="main_blog--td flex"><img class="main_hero--img" src="./img/brooklyn.svg" alt="" width="36.5" height="34.5">
+                                <p class="main_hero--text">Brooklyn Simmons</p></td>
+                                <td class="main_blog--td">8/30/14</td>
+                                <td class="main_blog--td">$948.55</td>
+                                <td class="main_blog--td">$779.58</td>
+                                
+                                <td class="main_blog--td">(629) 555-0129</td>
+                        </tr>
+                        <tr class="main_blog_tbody--tr">
+                            <td class="main_blog--td flex"><img class="main_hero--img" src="./img/robert.svg" alt="" width="36.5" height="34.5">
+                                <p class="main_hero--text">Robert Fox</p></td>
+                                <td class="main_blog--td">8/30/14</td>
+                                <td class="main_blog--td">$948.55</td>
+                                <td class="main_blog--td">$779.58</td>
+                                
+                                <td class="main_blog--td">(629) 555-0129</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+                </div>
+            </div>
+    </div>
 </body>
 </html>
